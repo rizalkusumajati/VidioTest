@@ -11,10 +11,7 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
 import com.nioso.core.base.BaseResult
-import com.nioso.core.util.decrementIdlingResource
-import com.nioso.core.util.hide
-import com.nioso.core.util.init
-import com.nioso.core.util.show
+import com.nioso.core.util.*
 import com.riztech.vidiotest.R
 import com.riztech.vidiotest.presentation.adapter.CategoryAdapter
 import com.riztech.vidiotest.util.BaseFragment
@@ -61,6 +58,7 @@ class CategoryFragment : BaseFragment() {
             RecyclerView.VERTICAL
         ))
 
+        incrementIdlingResource()
 
     }
 
